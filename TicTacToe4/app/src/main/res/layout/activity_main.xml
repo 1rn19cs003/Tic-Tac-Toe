@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    tools:context="com.tanxe.tictactoe.MainActivity">
+
+    <!--Player 1 start-->
+    <TextView
+        android:id="@+id/idPlayer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="start"
+        android:paddingTop="30dp"
+        android:paddingLeft="30dp"
+        android:text="Player 1 : O"
+        android:textAlignment="inherit"
+        android:textColor="@color/material_on_surface_emphasis_medium"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/idPlayer1Score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:paddingTop="50dp"
+        android:paddingLeft="70dp"
+        android:text="0"
+        android:textAlignment="inherit"
+        android:textColor="@color/material_on_background_emphasis_high_type"
+        android:textSize="30sp" />
+    <!--    Player 1 end-->
+    <!--    Player 2 start-->
+
+    <!--    Player 2 end-->
+    <!--    turn start-->
+
+    <TextView
+        android:id="@+id/idPlayer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="right"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp"
+        android:text="Player 2 : X"
+        android:textAlignment="inherit"
+        android:textColor="@color/material_on_surface_emphasis_medium"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/idPlayer2Score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:paddingTop="50dp"
+        android:paddingRight="70dp"
+        android:text="0"
+        android:textAlignment="inherit"
+        android:textColor="@color/material_on_background_emphasis_high_type"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/idTVhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Tic Tac Toe"
+        android:textAlignment="center"
+        android:textColor="@color/material_on_background_emphasis_high_type"
+        android:textSize="30sp" />
+    <!--turn end-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVhead"
+        android:orientation="vertical">
+
+        <!--        for Row one ##########row one start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn0"
+                android:tag="0"
+                tools:text="0"
+                android:background="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="60sp" />
+            <Button
+                android:id="@+id/btn1"
+                android:tag="1"
+                tools:text="1"
+                android:background="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="60sp"/>
+            <Button
+                android:id="@+id/btn2"
+                android:tag="2"
+                tools:text="2"
+                android:background="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="60sp"/>
+
+
+        </LinearLayout>
+        <!--row one ended -->
+
+
+        <!--row two start -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn3"
+                android:tag="3"
+                tools:text="3"
+                android:background="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="60sp"/>
+            <Button
+                android:id="@+id/btn4"
+                android:tag="4"
+                tools:text="4"
+                android:background="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="60sp"/>
+            <Button
+                android:id="@+id/btn5"
+                android:tag="5"
+                tools:text="5"
+                android:background="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="60sp"/>
+
+
+        </LinearLayout>
+        <!--row two ended-->
+
+        <!--row three start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn6"
+                android:tag="6"
+                tools:text="6"
+                android:background="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="60sp"/>
+            <Button
+                android:id="@+id/btn7"
+                android:tag="7"
+                tools:text="7"
+                android:background="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="60sp"/>
+            <Button
+                android:id="@+id/btn8"
+                android:tag="8"
+                tools:text="8"
+                android:background="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textSize="60sp"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn9"
+            android:tag="9"
+            android:text="RESET"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:textSize="60sp"/>
+        <!--row three start-->
+    </LinearLayout>
+
+</RelativeLayout>
